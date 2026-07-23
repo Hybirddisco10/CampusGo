@@ -43,7 +43,7 @@ function SignUp() {
     if (form.password !== form.confirm) errs.confirm = "Passwords do not match";
     if (role === "user" && !form.studentId.trim()) errs.studentId = "Student ID is required";
     if (role === "rider" && !form.vehicleType) errs.vehicleType = "Please select a vehicle type";
-    if (role === "rider" && !form.licenseNumber.trim()) errs.licenseNumber = "License number is required";
+    // if (role === "rider" && !form.licenseNumber.trim()) errs.licenseNumber = "License number is required";
     if (!agreed) errs.agreed = "You must agree to the terms";
     return errs;
   };
@@ -127,6 +127,24 @@ function SignUp() {
                 <p className="text-xs text-white/40 leading-relaxed font-light">
                   I want to earn by picking up and delivering items on campus
                 </p>
+
+          {/* <div className="cgo-role-card" style={{ background: "rgba(255,255,255,0.025)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: "24px", padding: "40px", transition: "all 0.3s ease", opacity: rolesInView ? 1 : 0, animation: rolesInView ? "cgoStagger 0.5s ease forwards 0.15s" : "none" }}>
+            <div style={{ fontSize: "48px", marginBottom: "20px" }}>🏍️</div>
+            <h3 style={{ fontSize: "22px", fontWeight: "700", color: "#fff", margin: "0 0 12px", fontFamily: "'DM Serif Display', serif" }}>I'm a Rider</h3>
+            <p style={{ fontSize: "15px", color: "rgba(255,255,255,0.45)", lineHeight: "1.7", margin: "0 0 28px", fontWeight: "300" }}>
+              Got a bike and free time between lectures? Accept delivery requests, earn money on your own schedule, and build your reputation on campus.
+            </p>
+            <ul style={{ listStyle: "none", padding: 0, margin: "0 0 32px", display: "flex", flexDirection: "column", gap: "10px" }}>
+              {["Accept requests that fit your schedule", "Get clear pickup and dropoff details", "Earn per delivery — no fixed hours", "Build your rating and grow your income"].map((item, i) => (
+                <li key={i} style={{ display: "flex", alignItems: "center", gap: "10px", fontSize: "14px", color: "rgba(255,255,255,0.55)" }}>
+                  <span style={{ width: "18px", height: "18px", borderRadius: "50%", background: "rgba(249,115,22,0.15)", border: "1px solid rgba(249,115,22,0.3)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "10px", color: "#f97316", flexShrink: 0 }}>✓</span>
+                  {item}
+                </li>
+              ))}
+            </ul>
+            </div> */}
+
+
                 <div className="mt-5 px-4 py-1.5 bg-orange-500/10 border border-orange-500/20 text-orange-400 text-xs rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-200">
                   Sign up as Rider →
                 </div>
@@ -250,11 +268,11 @@ function SignUp() {
                     </select>
                     {errors.vehicleType && <p className="text-xs text-red-400 mt-1">{errors.vehicleType}</p>}
                   </div>
-                  <div>
+                  {/* <div>
                     <label className="block text-xs text-white/55 mb-2 font-medium tracking-wide">License Number</label>
                     <input name="licenseNumber" value={form.licenseNumber} onChange={handleChange} placeholder="e.g. GH-1234-56" className={inputClass("licenseNumber")} />
                     {errors.licenseNumber && <p className="text-xs text-red-400 mt-1">{errors.licenseNumber}</p>}
-                  </div>
+                  </div> */}
                 </>
               )}
 

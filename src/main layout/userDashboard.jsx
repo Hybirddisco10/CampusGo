@@ -505,7 +505,7 @@ export default function UserDashboard() {
                 { label: "Email Address", value: USER.email, icon: "📧" },
                 { label: "Phone Number", value: "0244 567 890", icon: "📱" },
                 { label: "Student ID", value: USER.studentId, icon: "🎓" },
-                { label: "Total Deliveries", value: "12 deliveries", icon: "📦" },
+                { label: "Total Deliveries", value: "12", icon: "📦" },
               ].map((item, i) => (
                 <div key={i} style={{ display: "flex", alignItems: "center", gap: "14px", padding: "16px 24px", borderBottom: i < 4 ? "1px solid rgba(255,255,255,0.05)" : "none" }}>
                   <span style={{ fontSize: "16px" }}>{item.icon}</span>

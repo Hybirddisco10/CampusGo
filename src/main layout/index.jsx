@@ -122,7 +122,7 @@ const TESTIMONIALS = [
 ];
 
 const TICKER = [
-  "🚀 Delivered in under 30 mins",
+  "⚡ Delivered in under 30 mins",
   "📍 Live rider tracking",
   "🔐 OTP secured delivery",
   "⭐ 4.9 average rider rating",
@@ -172,12 +172,12 @@ export default function CampusGoLanding() {
         <div style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 32px", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
 
           <Link to="/" style={{ display: "flex", alignItems: "center", gap: "8px", textDecoration: "none" }}>
-            <span style={{ fontSize: "22px" }}>🚀</span>
+            {/* <span style={{ fontSize: "22px" }}>🚀</span> */}
             <span style={{ fontSize: "20px", fontWeight: "700", color: "#fff" }}>Campus<span style={{ color: "#f97316" }}>Go</span></span>
           </Link>
 
           <div style={{ display: "flex", gap: "32px" }}>
-            {[["#how-it-works", "How It Works"], ["#features", "Features"], ["#who", "Who It's For"], ["#reviews", "Reviews"]].map(([href, label]) => (
+            {[["#how-it-works", "How It Works"], ["#features", "Features"], ["#reviews", "Reviews"]].map(([href, label]) => (
               <a key={href} href={href} className="cgo-nav-link" style={{ color: "rgba(255,255,255,0.55)", textDecoration: "none", fontSize: "14px", transition: "color 0.2s", fontWeight: "400" }}>{label}</a>
             ))}
           </div>
@@ -323,16 +323,16 @@ export default function CampusGoLanding() {
       </div>
 
       {/* WHO IT'S FOR */}
-      <section id="who" ref={rolesRef} style={{ maxWidth: "1200px", margin: "0 auto", padding: "100px 32px", position: "relative", zIndex: 1 }}>
+      {/* <section id="who" ref={rolesRef} style={{ maxWidth: "1200px", margin: "0 auto", padding: "100px 32px", position: "relative", zIndex: 1 }}>
         <div style={{ textAlign: "center", marginBottom: "60px", opacity: rolesInView ? 1 : 0, transform: rolesInView ? "translateY(0)" : "translateY(24px)", transition: "all 0.7s ease" }}>
           <span style={{ display: "inline-block", background: "rgba(249,115,22,0.1)", border: "1px solid rgba(249,115,22,0.22)", color: "#f97316", padding: "6px 16px", borderRadius: "100px", fontSize: "12px", letterSpacing: "1px", textTransform: "uppercase", marginBottom: "16px" }}>Who It's For</span>
           <h2 style={{ fontSize: "clamp(28px, 4vw, 42px)", fontWeight: "700", color: "#fff", margin: "0 0 14px", letterSpacing: "-0.5px", fontFamily: "'DM Serif Display', serif" }}>Two roles. One platform.</h2>
           <p style={{ fontSize: "16px", color: "rgba(255,255,255,0.4)", maxWidth: "420px", margin: "0 auto", lineHeight: "1.7", fontWeight: "300" }}>Whether you need something delivered or want to earn delivering — CampusGo is for you.</p>
         </div>
 
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: "24px" }}>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: "24px" }}> */}
 
-          {/* User card */}
+          {/* User card
           <div className="cgo-role-card" style={{ background: "rgba(255,255,255,0.025)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: "24px", padding: "40px", transition: "all 0.3s ease", opacity: rolesInView ? 1 : 0, animation: rolesInView ? "cgoStagger 0.5s ease forwards 0s" : "none" }}>
             <div style={{ fontSize: "48px", marginBottom: "20px" }}>🎒</div>
             <h3 style={{ fontSize: "22px", fontWeight: "700", color: "#fff", margin: "0 0 12px", fontFamily: "'DM Serif Display', serif" }}>I'm a User</h3>
@@ -350,9 +350,9 @@ export default function CampusGoLanding() {
             <Link to="/signup" className="cgo-btn-primary" style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "#f97316", color: "#fff", padding: "13px 24px", borderRadius: "10px", fontSize: "14px", fontWeight: "600", textDecoration: "none", boxShadow: "0 6px 20px rgba(249,115,22,0.3)", transition: "all 0.25s" }}>
               Sign Up as User →
             </Link>
-          </div>
+          </div> */}
 
-          {/* Rider card */}
+          {/* Rider card
           <div className="cgo-role-card" style={{ background: "rgba(255,255,255,0.025)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: "24px", padding: "40px", transition: "all 0.3s ease", opacity: rolesInView ? 1 : 0, animation: rolesInView ? "cgoStagger 0.5s ease forwards 0.15s" : "none" }}>
             <div style={{ fontSize: "48px", marginBottom: "20px" }}>🏍️</div>
             <h3 style={{ fontSize: "22px", fontWeight: "700", color: "#fff", margin: "0 0 12px", fontFamily: "'DM Serif Display', serif" }}>I'm a Rider</h3>
@@ -373,7 +373,7 @@ export default function CampusGoLanding() {
           </div>
 
         </div>
-      </section>
+      </section> */}
 
       {/* HOW IT WORKS */}
       <section id="how-it-works" ref={stepsRef} style={{ background: "rgba(249,115,22,0.03)", borderTop: "1px solid rgba(249,115,22,0.08)", borderBottom: "1px solid rgba(249,115,22,0.08)", padding: "100px 32px", position: "relative", zIndex: 1 }}>
@@ -462,14 +462,16 @@ export default function CampusGoLanding() {
       <footer style={{ borderTop: "1px solid rgba(255,255,255,0.06)", padding: "44px 32px", position: "relative", zIndex: 1 }}>
         <div style={{ maxWidth: "1200px", margin: "0 auto", textAlign: "center" }}>
           <div style={{ display: "flex", alignItems: "center", gap: "8px", justifyContent: "center", marginBottom: "8px" }}>
-            <span style={{ fontSize: "20px" }}>🚀</span>
+            {/* <span style={{ fontSize: "20px" }}>🚀</span> */}
             <span style={{ fontSize: "18px", fontWeight: "700", color: "#fff" }}>Campus<span style={{ color: "#f97316" }}>Go</span></span>
           </div>
           <p style={{ fontSize: "13px", color: "rgba(255,255,255,0.22)", margin: "0 0 20px" }}>Fast. Reliable. Campus-built. 🏍️</p>
           <div style={{ display: "flex", gap: "24px", justifyContent: "center", flexWrap: "wrap", marginBottom: "20px" }}>
-            {["About", "Privacy", "Terms", "Contact", "Become a Rider"].map(l => (
+            {/* {["About", "Contact", ].map(l => (
               <a key={l} href="#" className="cgo-footer-link" style={{ color: "rgba(255,255,255,0.25)", textDecoration: "none", fontSize: "13px", transition: "color 0.2s" }}>{l}</a>
-            ))}
+            ))} */}
+            <Link to="/about" className="cgo-footer-link" style={{ color: "rgba(255,255,255,0.25)", textDecoration: "none", fontSize: "13px", transition: "color 0.2s" }}>About</Link>
+            <Link to="/contact" className="cgo-footer-link" style={{ color: "rgba(255,255,255,0.25)", textDecoration: "none", fontSize: "13px", transition: "color 0.2s" }}>Contact</Link>
           </div>
           <p style={{ fontSize: "12px", color: "rgba(255,255,255,0.12)", margin: 0 }}>© 2026 CampusGo. All rights reserved.</p>
         </div>

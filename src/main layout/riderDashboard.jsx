@@ -50,7 +50,7 @@ const RIDER = {
   email: "kofi.owusu@st.knust.edu.gh",
   phone: "0244 567 890",
   vehicle: "Motorbike",
-  license: "GH-1234-56",
+  // license: "GH-1234-56",
   rating: 4.9,
   avatar: "KO",
   totalDeliveries: 48,
@@ -203,7 +203,7 @@ export default function RiderDashboard() {
           <div style={{ animation: "cgoFadeUp 0.5s ease forwards" }}>
 
             {/* Greeting + online status */}
-            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: "32px" }}>
+            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: "32px", paddingRight: "50px" }}>
               <div>
                 <p style={{ fontSize: "13px", color: "rgba(255,255,255,0.35)", margin: "0 0 4px" }}>Good morning 👋</p>
                 <h1 style={{ fontSize: "clamp(24px, 3vw, 36px)", fontWeight: "700", color: "#fff", margin: "0 0 6px", fontFamily: "'DM Serif Display', serif" }}>
@@ -590,7 +590,7 @@ export default function RiderDashboard() {
                 { label: "Email Address", value: RIDER.email, icon: "📧" },
                 { label: "Phone Number", value: RIDER.phone, icon: "📱" },
                 { label: "Vehicle Type", value: RIDER.vehicle, icon: "🏍️" },
-                { label: "License Number", value: RIDER.license, icon: "📋" },
+                // { label: "License Number", value: RIDER.license, icon: "📋" },
                 { label: "Total Earnings", value: RIDER.earnings, icon: "💰" },
               ].map((item, i) => (
                 <div key={i} style={{ display: "flex", alignItems: "center", gap: "14px", padding: "16px 24px", borderBottom: i < 5 ? "1px solid rgba(255,255,255,0.05)" : "none" }}>
