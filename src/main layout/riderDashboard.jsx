@@ -143,10 +143,10 @@ export default function RiderDashboard() {
 
         {/* Logo */}
         <div style={{ padding: "24px 20px 20px", borderBottom: "1px solid #e5e9e6" }}>
-          <Link to="/" style={{ display: "flex", alignItems: "center", gap: "8px", textDecoration: "none" }}>
-            <span style={{ fontSize: "20px" }}>🚀</span>
+          {/* <Link to="/" style={{ display: "flex", alignItems: "center", gap: "8px", textDecoration: "none" }}> */}
+            {/* <span style={{ fontSize: "20px" }}>🚀</span> */}
             <span style={{ fontSize: "18px", fontWeight: "700", color: "#0f2e1c" }}>Campus<span style={{ color: "#15803d" }}>Go</span></span>
-          </Link>
+          {/* </Link> */}
           <div style={{ marginTop: "12px", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
             <span style={{ fontSize: "12px", color: isOnline ? "#16a34a" : "#a8b5ae" }}>
               {isOnline ? "🟢 Online" : "⚫ Offline"}
@@ -603,10 +603,11 @@ export default function RiderDashboard() {
                 </div>
               ))}
             </div>
-
-            <button style={{ width: "100%", background: "rgba(239,68,68,0.08)", border: "1px solid rgba(239,68,68,0.2)", color: "#ef4444", padding: "13px", borderRadius: "12px", fontSize: "14px", fontWeight: "600", cursor: "pointer", fontFamily: "'DM Sans', sans-serif" }}>
-              🚪 Sign Out
-            </button>
+            <Link to="/signout" style={{ textDecoration: "none" }}>
+              <button style={{ width: "100%", background: "rgba(239,68,68,0.08)", border: "1px solid rgba(239,68,68,0.2)", color: "#ef4444", padding: "13px", borderRadius: "12px", fontSize: "14px", fontWeight: "600", cursor: "pointer", fontFamily: "'DM Sans', sans-serif" }}>
+                🚪 Sign Out
+              </button>
+            </Link>
           </div>
         )}
 

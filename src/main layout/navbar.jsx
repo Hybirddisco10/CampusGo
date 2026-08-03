@@ -134,10 +134,14 @@ export default function HamburgerNavbar() {
       >
         {/* Panel header */}
         <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", padding: "20px 20px 16px", borderBottom: "1px solid rgba(255,255,255,0.06)" }}>
-          <Link to="/" onClick={() => setOpen(false)} style={{ display: "flex", alignItems: "center", gap: "8px", textDecoration: "none" }}>
-            {/* <span style={{ fontSize: "20px" }}>🏍️</span> */}
+          {/* <Link to="/" onClick={() => setOpen(false)} style={{ display: "flex", alignItems: "center", gap: "8px", textDecoration: "none" }}>
+            <span style={{ fontSize: "20px" }}>🏍️</span>
             <span style={{ fontSize: "18px", fontWeight: "700", color: "#fff" }}>Campus<span style={{ color: "#facc15" }}>Go</span></span>
-          </Link>
+          </Link> */}
+          <Link to="/" style={{ display: "flex", alignItems: "center", gap: "8px", textDecoration: "none" }}>
+  <img src="public/cmpsgo.png" alt="CampusGo logo" style={{ width: "40px", height: "40px" }} />
+  <span style={{ fontSize: "20px", fontWeight: "700", color: "#fff" }}>Campus<span style={{ color: "#facc15" }}>Go</span></span>
+</Link>
           <button
             onClick={() => setOpen(false)}
             className="cgo-ham-close"

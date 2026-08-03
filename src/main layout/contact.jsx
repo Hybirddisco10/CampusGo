@@ -82,7 +82,7 @@ export default function ContactPage() {
     <div style={{ fontFamily: "'DM Sans', sans-serif", background: "#ffffff", color: "#14291d", minHeight: "100vh", overflowX: "hidden", position: "relative" }}>
 
       {/* ── HERO ─────────────────────────────────────────────────── */}
-      <section style={{ maxWidth: "800px", margin: "0 auto", padding: "160px 32px 70px", textAlign: "center", position: "relative", zIndex: 1 }}>
+      <section style={{ maxWidth: "800px", margin: "0 auto", padding: "120px 32px 70px", textAlign: "center", position: "relative", zIndex: 1 }}>
         <div style={{ opacity: heroVisible ? 1 : 0, animation: heroVisible ? "cgoFadeUp 0.9s ease forwards" : "none" }}>
           <div style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "rgba(234,179,8,0.12)", border: "1px solid rgba(234,179,8,0.35)", color: "#a16207", padding: "7px 16px", borderRadius: "100px", fontSize: "13px", marginBottom: "28px", letterSpacing: "0.3px" }}>
             <span style={{ width: "6px", height: "6px", borderRadius: "50%", background: "#eab308", display: "inline-block", animation: "cgoPulse 2s ease-in-out infinite" }} />
@@ -194,7 +194,7 @@ export default function ContactPage() {
           <div style={{ display: "flex", alignItems: "center", gap: "8px", justifyContent: "center", marginBottom: "8px" }}>
             <span style={{ fontSize: "18px", fontWeight: "700", color: "#0f2e1c" }}>Campus<span style={{ color: "#15803d" }}>Go</span></span>
           </div>
-          <p style={{ fontSize: "13px", color: "#8a9a90", margin: "0 0 20px" }}>Fast. Reliable. Campus-built. 🏍️</p>
+          <p style={{ fontSize: "13px", color: "#8a9a90", margin: "0 0 20px" }}>Fast. Reliable. Campus-built.</p>
           <div style={{ display: "flex", gap: "24px", justifyContent: "center", flexWrap: "wrap", marginBottom: "20px" }}>
             <Link to="/about" className="cgo-footer-link" style={{ color: "#5c7768", textDecoration: "none", fontSize: "13px", transition: "color 0.2s" }}>About</Link>
             <Link to="/contact" className="cgo-footer-link" style={{ color: "#5c7768", textDecoration: "none", fontSize: "13px", transition: "color 0.2s" }}>Contact</Link>

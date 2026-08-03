@@ -6,6 +6,7 @@ import SignUp from './registration/signup'
 import SignIn from './registration/signin'
 import ForgotPassword from './registration/forgotPassword'
 import UserDashboard from './main layout/userDashboard'
+import SignOut from './main layout/signout'
 import RiderDashboard from './main layout/riderDashboard'
 import HamburgerNavbar from './main layout/navbar'
 import AboutPage from './main layout/about'
@@ -26,6 +27,7 @@ function App() {
         <Route path="/forgot-password" element={<ForgotPassword />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="/signout" element={<SignOut />} />
       </Routes>
     </>
   )
