@@ -26,12 +26,15 @@ styleEl.textContent = `
     from { opacity: 0; transform: translateX(16px); }
     to { opacity: 1; transform: translateX(0); }
   }
-  .cgo-ham-link:hover { color: #f97316 !important; background: rgba(249,115,22,0.06) !important; }
-  .cgo-ham-link.active { color: #f97316 !important; background: rgba(249,115,22,0.1) !important; }
-  .cgo-ham-btn:hover { background: rgba(249,115,22,0.1) !important; border-color: rgba(249,115,22,0.35) !important; }
+  .cgo-ham-link:hover { color: #facc15 !important; background: rgba(21,128,61,0.15) !important; }
+  .cgo-ham-link.active { color: #facc15 !important; background: rgba(21,128,61,0.2) !important; }
+  .cgo-ham-btn { box-shadow: none !important; outline: none !important; -webkit-tap-highlight-color: transparent; }
+  .cgo-ham-btn:hover { background: rgba(21,128,61,0.15) !important; border-color: rgba(250,204,21,0.4) !important; box-shadow: none !important; }
+  .cgo-ham-btn:focus { outline: none !important; box-shadow: none !important; }
+  .cgo-ham-btn:active { box-shadow: none !important; }
   .cgo-ham-close:hover { background: rgba(255,255,255,0.08) !important; }
-  .cgo-ham-auth-primary:hover { transform: translateY(-2px); box-shadow: 0 10px 28px rgba(249,115,22,0.4); }
-  .cgo-ham-auth-outline:hover { background: rgba(249,115,22,0.08); border-color: rgba(249,115,22,0.5); }
+  .cgo-ham-auth-primary:hover { transform: translateY(-2px); box-shadow: 0 10px 28px rgba(234,179,8,0.4); }
+  .cgo-ham-auth-outline:hover { background: rgba(21,128,61,0.15); border-color: rgba(250,204,21,0.5); }
 `;
 if (!document.head.querySelector("[data-cgo-hamburger]")) {
   document.head.appendChild(styleEl);
@@ -75,9 +78,8 @@ export default function HamburgerNavbar() {
           width: "46px",
           height: "46px",
           borderRadius: "12px",
-          background: "rgba(10,22,40,0.85)",
-          border: "1px solid rgba(249,115,22,0.25)",
-          backdropFilter: "blur(12px)",
+          background: "#ffff",
+          // border: "1px solid rgba(250,204,21,0.3)",
           cursor: "pointer",
           display: open ? "none" : "flex",
           flexDirection: "column",
@@ -85,12 +87,15 @@ export default function HamburgerNavbar() {
           justifyContent: "center",
           gap: "5px",
           transition: "all 0.2s ease",
-          boxShadow: "0 4px 16px rgba(0,0,0,0.3)",
+          boxShadow: "none",
+          outline: "none",
+          WebkitAppearance: "none",
+          appearance: "none",
         }}
       >
-        <span style={{ width: "20px", height: "2px", background: "#f97316", borderRadius: "2px" }} />
-        <span style={{ width: "20px", height: "2px", background: "#f97316", borderRadius: "2px" }} />
-        <span style={{ width: "20px", height: "2px", background: "#f97316", borderRadius: "2px" }} />
+        <span style={{ width: "20px", height: "2px", background: "#14532d", borderRadius: "2px" }} />
+        <span style={{ width: "20px", height: "2px", background: "#14532d", borderRadius: "2px" }} />
+        <span style={{ width: "20px", height: "2px", background: "#14532d", borderRadius: "2px" }} />
       </button>
 
       {/* ── OVERLAY ── */}
@@ -116,8 +121,8 @@ export default function HamburgerNavbar() {
           right: 0,
           height: "100vh",
           width: "min(320px, 85vw)",
-          background: "#0d1f35",
-          borderLeft: "1px solid rgba(249,115,22,0.15)",
+          background: "#14291d",
+          borderLeft: "1px solid rgba(250,204,21,0.2)",
           zIndex: 299,
           display: "flex",
           flexDirection: "column",
@@ -130,8 +135,8 @@ export default function HamburgerNavbar() {
         {/* Panel header */}
         <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", padding: "20px 20px 16px", borderBottom: "1px solid rgba(255,255,255,0.06)" }}>
           <Link to="/" onClick={() => setOpen(false)} style={{ display: "flex", alignItems: "center", gap: "8px", textDecoration: "none" }}>
-            <span style={{ fontSize: "20px" }}>🚀</span>
-            <span style={{ fontSize: "18px", fontWeight: "700", color: "#fff" }}>Campus<span style={{ color: "#f97316" }}>Go</span></span>
+            {/* <span style={{ fontSize: "20px" }}>🏍️</span> */}
+            <span style={{ fontSize: "18px", fontWeight: "700", color: "#fff" }}>Campus<span style={{ color: "#facc15" }}>Go</span></span>
           </Link>
           <button
             onClick={() => setOpen(false)}
@@ -180,7 +185,7 @@ export default function HamburgerNavbar() {
             to="/signin"
             onClick={() => setOpen(false)}
             className="cgo-ham-auth-outline"
-            style={{ textAlign: "center", color: "#f97316", border: "1px solid rgba(249,115,22,0.35)", padding: "12px", borderRadius: "10px", fontSize: "14px", fontWeight: "500", textDecoration: "none", transition: "all 0.2s" }}
+            style={{ textAlign: "center", color: "#facc15", border: "1px solid rgba(250,204,21,0.4)", padding: "12px", borderRadius: "10px", fontSize: "14px", fontWeight: "500", textDecoration: "none", transition: "all 0.2s" }}
           >
             Sign In
           </Link>
@@ -188,7 +193,7 @@ export default function HamburgerNavbar() {
             to="/signup"
             onClick={() => setOpen(false)}
             className="cgo-ham-auth-primary"
-            style={{ textAlign: "center", background: "#f97316", color: "#fff", padding: "12px", borderRadius: "10px", fontSize: "14px", fontWeight: "600", textDecoration: "none", boxShadow: "0 4px 16px rgba(249,115,22,0.3)", transition: "all 0.2s" }}
+            style={{ textAlign: "center", background: "#eab308", color: "#14291d", padding: "12px", borderRadius: "10px", fontSize: "14px", fontWeight: "600", textDecoration: "none", boxShadow: "0 4px 16px rgba(234,179,8,0.3)", transition: "all 0.2s" }}
           >
             Get Started
           </Link>

@@ -48,19 +48,19 @@ function SignIn() {
   };
 
   const inputClass = (field) =>
-    `w-full px-4 py-3 rounded-xl bg-white/[0.05] border text-white text-sm placeholder-white/20 focus:outline-none focus:ring-2 focus:ring-orange-500/20 transition-all ${
-      errors[field] ? "border-red-500" : "border-white/10 focus:border-orange-500/60"
+    `w-full px-4 py-3 rounded-xl bg-white border text-[#14291d] text-sm placeholder-[#a8b5ae] focus:outline-none focus:ring-2 focus:ring-[#15803d]/20 transition-all ${
+      errors[field] ? "border-red-500" : "border-[#d8ded9] focus:border-[#15803d]/60"
     }`;
 
   // ── ROLE SELECTION SCREEN ──
   if (!role) {
     return (
-      <div className="min-h-screen bg-[#0a1628] text-white flex flex-col" style={{ fontFamily: "'DM Sans', sans-serif" }}>
+      <div className="min-h-screen bg-white text-[#14291d] flex flex-col" style={{ fontFamily: "'DM Sans', sans-serif" }}>
 
         <nav className="py-4 px-6 pr-24 flex justify-end items-center">
-          <p className="text-sm text-white/50 m-0">
+          <p className="text-sm text-[#5c7768] m-0 py-4 px-6">
             Don't have an account?{" "}
-            <Link to="/signup" className="text-orange-400 font-semibold hover:text-orange-300 transition-colors no-underline">Sign Up</Link>
+            <Link to="/signup" className="text-[#15803d] font-semibold hover:text-[#166534] transition-colors no-underline">Sign Up</Link>
           </p>
         </nav>
 
@@ -68,14 +68,14 @@ function SignIn() {
           <div className="w-full max-w-lg">
 
             <div className="text-center mb-10">
-              <div className="inline-flex items-center gap-2 bg-orange-500/10 border border-orange-500/25 text-orange-400 px-4 py-1.5 rounded-full text-xs mb-5 tracking-wide">
-                <span className="w-1.5 h-1.5 rounded-full bg-orange-500 animate-pulse" />
+              <div className="inline-flex items-center gap-2 bg-[#eab308]/10 border border-[#eab308]/35 text-[#a16207] px-4 py-1.5 rounded-full text-xs mb-5 tracking-wide">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#eab308] animate-pulse" />
                 Welcome back
               </div>
-              <h1 className="text-4xl font-bold text-white mb-3">
-                Sign in to <span className="text-orange-500">CampusGo</span>
+              <h1 className="text-4xl font-bold text-[#0f2e1c] mb-3">
+                Sign in to <span className="text-[#15803d]">CampusGo</span>
               </h1>
-              <p className="text-sm text-white/45 font-light leading-relaxed">
+              <p className="text-sm text-[#5c7768] font-light leading-relaxed">
                 Are you signing in to send deliveries, <br /> or to ride and deliver for others?
               </p>
             </div>
@@ -85,14 +85,14 @@ function SignIn() {
               {/* User Card */}
               <button
                 onClick={() => setRole("user")}
-                className="group flex flex-col items-center text-center p-8 bg-white/3 border border-white/10 rounded-2xl hover:border-orange-500/40 hover:bg-orange-500/5 transition-all duration-200 cursor-pointer"
+                className="group flex flex-col items-center text-center p-8 bg-white border border-[#e5e9e6] rounded-2xl hover:border-[#15803d]/40 hover:bg-[#15803d]/5 transition-all duration-200 cursor-pointer"
               >
                 <div className="text-5xl mb-4 group-hover:scale-110 transition-transform duration-200">🎒</div>
-                <h3 className="text-lg font-semibold text-white mb-2">I'm a User</h3>
-                <p className="text-xs text-white/40 leading-relaxed font-light">
+                <h3 className="text-lg font-semibold text-[#0f2e1c] mb-2">I'm a User</h3>
+                <p className="text-xs text-[#5c7768] leading-relaxed font-light">
                   Sign in to request and track deliveries
                 </p>
-                <div className="mt-5 px-4 py-1.5 bg-orange-500/10 border border-orange-500/20 text-orange-400 text-xs rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                <div className="mt-5 px-4 py-1.5 bg-[#eab308]/10 border border-[#eab308]/30 text-[#a16207] text-xs rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-200">
                   Sign in as User →
                 </div>
               </button>
@@ -100,29 +100,29 @@ function SignIn() {
               {/* Rider Card */}
               <button
                 onClick={() => setRole("rider")}
-                className="group flex flex-col items-center text-center p-8 bg-white/3 border border-white/10 rounded-2xl hover:border-orange-500/40 hover:bg-orange-500/5 transition-all duration-200 cursor-pointer"
+                className="group flex flex-col items-center text-center p-8 bg-white border border-[#e5e9e6] rounded-2xl hover:border-[#15803d]/40 hover:bg-[#15803d]/5 transition-all duration-200 cursor-pointer"
               >
                 <div className="text-5xl mb-4 group-hover:scale-110 transition-transform duration-200">🏍️</div>
-                <h3 className="text-lg font-semibold text-white mb-2">I'm a Rider</h3>
-                <p className="text-xs text-white/40 leading-relaxed font-light">
+                <h3 className="text-lg font-semibold text-[#0f2e1c] mb-2">I'm a Rider</h3>
+                <p className="text-xs text-[#5c7768] leading-relaxed font-light">
                   Sign in to view and accept delivery requests
                 </p>
-                <div className="mt-5 px-4 py-1.5 bg-orange-500/10 border border-orange-500/20 text-orange-400 text-xs rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                <div className="mt-5 px-4 py-1.5 bg-[#eab308]/10 border border-[#eab308]/30 text-[#a16207] text-xs rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-200">
                   Sign in as Rider →
                 </div>
               </button>
 
             </div>
 
-            <p className="text-center text-xs text-white/25">
+            <p className="text-center text-xs text-[#a8b5ae]">
               Signing in as the wrong role? You can switch on the next screen.
             </p>
 
           </div>
         </main>
 
-        <footer className="text-center py-4 border-t border-white/5">
-          <p className="text-xs text-white/20 m-0">© 2026 CampusGo. All rights reserved. 🚀</p>
+        <footer className="text-center py-4 border-t border-[#e5e9e6]">
+          <p className="text-xs text-[#a8b5ae] m-0">© 2026 CampusGo. All rights reserved.</p>
         </footer>
 
       </div>
@@ -131,18 +131,18 @@ function SignIn() {
 
   // ── SIGN IN FORM ──
   return (
-    <div className="min-h-screen bg-[#0a1628] text-white flex flex-col" style={{ fontFamily: "'DM Sans', sans-serif" }}>
+    <div className="min-h-screen bg-white text-[#14291d] flex flex-col" style={{ fontFamily: "'DM Sans', sans-serif" }}>
 
       <nav className="py-4 px-6 pr-24 flex justify-between items-center">
         <button
           onClick={() => { setRole(null); setErrors({}); setSubmitted(false); setCountdown(3); setForm({ email: "", password: "" }); }}
-          className="flex items-center gap-2 text-sm text-white/40 hover:text-orange-400 transition-colors bg-transparent border-none cursor-pointer p-0"
+          className="flex items-center gap-2 text-sm text-[#5c7768] hover:text-[#15803d] transition-colors bg-transparent border-none cursor-pointer p-0 py-4 px-6"
         >
           ← Change role
         </button>
-        <p className="text-sm text-white/50 m-0">
+        <p className="text-sm text-[#5c7768] m-0">
           Don't have an account?{" "}
-          <Link to="/signup" className="text-orange-400 font-semibold hover:text-orange-300 transition-colors no-underline">Sign Up</Link>
+          <Link to="/signup" className="text-[#15803d] font-semibold hover:text-[#166534] transition-colors no-underline">Sign Up</Link>
         </p>
       </nav>
 
@@ -150,13 +150,13 @@ function SignIn() {
         <div className="w-full max-w-md">
 
           <div className="text-center mb-8">
-            <div className="inline-flex items-center gap-2 bg-orange-500/10 border border-orange-500/25 text-orange-400 px-4 py-1.5 rounded-full text-xs mb-5 tracking-wide">
+            <div className="inline-flex items-center gap-2 bg-[#eab308]/10 border border-[#eab308]/35 text-[#a16207] px-4 py-1.5 rounded-full text-xs mb-5 tracking-wide">
               {role === "user" ? "🎒 Signing in as a User" : "🏍️ Signing in as a Rider"}
             </div>
-            <h1 className="text-4xl font-bold text-white mb-2">
+            <h1 className="text-4xl font-bold text-[#0f2e1c] mb-2">
               {submitted ? `Welcome back, ${userName}!` : "Welcome back"}
             </h1>
-            <p className="text-sm text-white/45 font-light">
+            <p className="text-sm text-[#5c7768] font-light">
               {submitted
                 ? "Great to see you again."
                 : role === "user"
@@ -165,18 +165,18 @@ function SignIn() {
             </p>
           </div>
 
-          <div className="bg-white/3 border border-white/10 rounded-2xl p-8 backdrop-blur-md">
+          <div className="bg-[#FAFAF8] border border-[#e5e9e6] rounded-2xl p-8">
 
             {submitted ? (
               /* ── SUCCESS STATE ── */
               <div className="w-full bg-green-500/8 border border-green-500/25 rounded-xl p-6 text-center">
                 <div className="text-4xl mb-3">👋</div>
-                <p className="text-base font-semibold text-green-400 mb-1">
+                <p className="text-base font-semibold text-green-600 mb-1">
                   Signed in successfully!
                 </p>
-                <p className="text-xs text-white/40 m-0">
+                <p className="text-xs text-[#8a9a90] m-0">
                   Taking you to your {role === "rider" ? "rider" : "user"} dashboard in{" "}
-                  <span className="text-orange-400 font-bold">{countdown}</span>{" "}
+                  <span className="text-[#15803d] font-bold">{countdown}</span>{" "}
                   second{countdown !== 1 ? "s" : ""}...
                 </p>
               </div>
@@ -185,7 +185,7 @@ function SignIn() {
                 {/* Google */}
                 <button
                   onClick={() => alert("Connect Firebase for Google Auth!")}
-                  className="w-full flex items-center justify-center gap-3 bg-white/3 border border-white/10 text-white py-3 rounded-xl text-sm font-medium hover:bg-white/5 hover:border-orange-500/30 transition-all duration-200 mb-6"
+                  className="w-full flex items-center justify-center gap-3 bg-white border border-[#e5e9e6] text-[#14291d] py-3 rounded-xl text-sm font-medium hover:bg-[#F7FAF8] hover:border-[#eab308]/40 transition-all duration-200 mb-6"
                 >
                   <svg width="18" height="18" viewBox="0 0 48 48">
                     <path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/>
@@ -198,39 +198,39 @@ function SignIn() {
 
                 {/* Divider */}
                 <div className="flex items-center gap-4 mb-6">
-                  <div className="flex-1 h-px bg-white/10" />
-                  <span className="text-xs text-white/25">or sign in with email</span>
-                  <div className="flex-1 h-px bg-white/10" />
+                  <div className="flex-1 h-px bg-[#e5e9e6]" />
+                  <span className="text-xs text-[#a8b5ae]">or sign in with email</span>
+                  <div className="flex-1 h-px bg-[#e5e9e6]" />
                 </div>
 
                 <div className="flex flex-col gap-4">
 
                   {/* Email */}
                   <div>
-                    <label className="block text-xs text-white/55 mb-2 font-medium tracking-wide">Email Address</label>
+                    <label className="block text-xs text-[#33513f] mb-2 font-medium tracking-wide">Email Address</label>
                     <input name="email" type="email" value={form.email} onChange={handleChange} placeholder="you@example.com" className={inputClass("email")} />
-                    {errors.email && <p className="text-xs text-red-400 mt-1">{errors.email}</p>}
+                    {errors.email && <p className="text-xs text-red-500 mt-1">{errors.email}</p>}
                   </div>
 
                   {/* Password */}
                   <div>
                     <div className="flex justify-between items-center mb-2">
-                      <label className="text-xs text-white/55 font-medium tracking-wide">Password</label>
-                      <Link to="/forgot-password" className="text-xs text-orange-400 hover:text-orange-300 transition-colors no-underline">Forgot password?</Link>
+                      <label className="text-xs text-[#33513f] font-medium tracking-wide">Password</label>
+                      <Link to="/forgot-password" className="text-xs text-[#15803d] hover:text-[#166534] transition-colors no-underline">Forgot password?</Link>
                     </div>
                     <div className="relative">
                       <input name="password" type={showPassword ? "text" : "password"} value={form.password} onChange={handleChange} placeholder="Enter your password" className={inputClass("password")} />
-                      <button onClick={() => setShowPassword(!showPassword)} className="absolute right-3 top-1/2 -translate-y-1/2 text-white/30 hover:text-orange-400 transition-colors text-lg bg-transparent border-none cursor-pointer">
+                      <button onClick={() => setShowPassword(!showPassword)} className="absolute right-3 top-1/2 -translate-y-1/2 text-[#8a9a90] hover:text-[#15803d] transition-colors text-lg bg-transparent border-none cursor-pointer">
                         {showPassword ? "🙈" : "👁️"}
                       </button>
                     </div>
-                    {errors.password && <p className="text-xs text-red-400 mt-1">{errors.password}</p>}
+                    {errors.password && <p className="text-xs text-red-500 mt-1">{errors.password}</p>}
                   </div>
 
                   {/* Submit */}
                   <button
                     onClick={handleSubmit}
-                    className="w-full bg-orange-500 hover:bg-orange-600 text-white py-3.5 rounded-xl text-sm font-semibold transition-all duration-200 hover:scale-[1.02] shadow-lg shadow-orange-500/25 mt-1"
+                    className="w-full bg-[#eab308] hover:bg-[#ca8a04] text-[#14291d] py-3.5 rounded-xl text-sm font-semibold transition-all duration-200 hover:scale-[1.02] shadow-lg shadow-[#eab308]/25 mt-1"
                   >
                     {role === "rider" ? "Sign In as Rider →" : "Sign In →"}
                   </button>
@@ -244,8 +244,8 @@ function SignIn() {
         </div>
       </main>
 
-      <footer className="text-center py-4 border-t border-white/5">
-        <p className="text-xs text-white/20 m-0">© 2026 CampusGo. All rights reserved. 🚀</p>
+      <footer className="text-center py-4 border-t border-[#e5e9e6]">
+        <p className="text-xs text-[#a8b5ae] m-0">© 2026 CampusGo. All rights reserved.</p>
       </footer>
 
     </div>
