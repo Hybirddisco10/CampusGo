@@ -139,7 +139,7 @@ export default function HamburgerNavbar() {
             <span style={{ fontSize: "18px", fontWeight: "700", color: "#fff" }}>Campus<span style={{ color: "#facc15" }}>Go</span></span>
           </Link> */}
           <Link to="/" style={{ display: "flex", alignItems: "center", gap: "8px", textDecoration: "none" }}>
-  <img src="public/cmpsgo.png" alt="CampusGo logo" style={{ width: "40px", height: "40px" }} />
+  <img src="/cmpsgo.png" alt="CampusGo logo" style={{ width: "40px", height: "40px" }} />
   <span style={{ fontSize: "20px", fontWeight: "700", color: "#fff" }}>Campus<span style={{ color: "#facc15" }}>Go</span></span>
 </Link>
           <button
