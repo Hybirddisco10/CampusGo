@@ -122,7 +122,7 @@ export default function CampusGoLanding() {
             <span style={{ fontSize: "20px", fontWeight: "700", color: "#0f2e1c" }}>Campus<span style={{ color: "#15803d" }}>Go</span></span>
           </Link> */}
           <Link to="/" style={{ display: "flex", alignItems: "center", gap: "8px", textDecoration: "none" }}>
-          <img src="public/cmpsgo.png" alt="CampusGo logo" style={{ width: "50px", height: "50px" }} />
+          <img src="/cmpsgo.png" alt="CampusGo logo" style={{ width: "50px", height: "50px" }} />
           <span style={{ fontSize: "20px", fontWeight: "700", color: "#0f2e1c" }}>Campus<span style={{ color: "#15803d" }}>Go</span></span>
           </Link>
 
