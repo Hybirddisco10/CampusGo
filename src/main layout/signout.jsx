@@ -1,11 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { useAuth } from "../hooks/useAuth";
 
 function SignOut() {
   const navigate = useNavigate();
+  const { logout } = useAuth();
   const [countdown, setCountdown] = useState(5);
 
   useEffect(() => {
+    logout();
     let count = 5;
     const timer = setInterval(() => {
       count -= 1;
@@ -16,7 +19,7 @@ function SignOut() {
       }
     }, 1000);
     return () => clearInterval(timer);
-  }, [navigate]);
+  }, [logout, navigate]);
 
   return (
     <div className="min-h-screen bg-white text-[#14291d] flex flex-col" style={{ fontFamily: "'DM Sans', sans-serif" }}>

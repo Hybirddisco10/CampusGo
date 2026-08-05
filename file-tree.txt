@@ -1,0 +1,27 @@
+C:\Users\user\Desktop\CampusGo Web\CampusGo\.oxlintrc.json
+C:\Users\user\Desktop\CampusGo Web\CampusGo\desktop.ini
+C:\Users\user\Desktop\CampusGo Web\CampusGo\file-tree.txt
+C:\Users\user\Desktop\CampusGo Web\CampusGo\index.html
+C:\Users\user\Desktop\CampusGo Web\CampusGo\package-lock.json
+C:\Users\user\Desktop\CampusGo Web\CampusGo\package.json
+C:\Users\user\Desktop\CampusGo Web\CampusGo\README.md
+C:\Users\user\Desktop\CampusGo Web\CampusGo\vite.config.js
+C:\Users\user\Desktop\CampusGo Web\CampusGo\public\campusgo.png
+C:\Users\user\Desktop\CampusGo Web\CampusGo\public\cmpsgo.png
+C:\Users\user\Desktop\CampusGo Web\CampusGo\public\favicon.svg
+C:\Users\user\Desktop\CampusGo Web\CampusGo\public\icons.svg
+C:\Users\user\Desktop\CampusGo Web\CampusGo\src\App.jsx
+C:\Users\user\Desktop\CampusGo Web\CampusGo\src\index.css
+C:\Users\user\Desktop\CampusGo Web\CampusGo\src\main.jsx
+C:\Users\user\Desktop\CampusGo Web\CampusGo\src\assets\campusgo.png
+C:\Users\user\Desktop\CampusGo Web\CampusGo\src\assets\vite.svg
+C:\Users\user\Desktop\CampusGo Web\CampusGo\src\main layout\about.jsx
+C:\Users\user\Desktop\CampusGo Web\CampusGo\src\main layout\contact.jsx
+C:\Users\user\Desktop\CampusGo Web\CampusGo\src\main layout\index.jsx
+C:\Users\user\Desktop\CampusGo Web\CampusGo\src\main layout\navbar.jsx
+C:\Users\user\Desktop\CampusGo Web\CampusGo\src\main layout\riderDashboard.jsx
+C:\Users\user\Desktop\CampusGo Web\CampusGo\src\main layout\signout.jsx
+C:\Users\user\Desktop\CampusGo Web\CampusGo\src\main layout\userDashboard.jsx
+C:\Users\user\Desktop\CampusGo Web\CampusGo\src\registration\forgotPassword.jsx
+C:\Users\user\Desktop\CampusGo Web\CampusGo\src\registration\signin.jsx
+C:\Users\user\Desktop\CampusGo Web\CampusGo\src\registration\signup.jsx
